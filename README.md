@@ -10,10 +10,10 @@ IoT dengan Face Recognition
 *   Six
 
 ## Persiapan
-Download dataset dari facenet berikut:
-Get the [20170512-110547](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk) dan simpan di foldern utama (FR_IoT).<br>
-Biarkan nama folder dan sub folder nya (20170512-110547)<br>
-Masukkan Data foto ke dalam folder ids dan buat sub folder dengan nama custom (nama custom ini yang akan muncul di frame vidio streaming)<br>
+  * Download dataset dari facenet berikut:
+  * Get the [20170512-110547](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk) dan simpan di foldern utama (FR_IoT).<br>
+  * Biarkan nama folder dan sub folder nya (20170512-110547)<br>
+  * Masukkan Data foto ke dalam folder ids dan buat sub folder dengan nama custom (nama custom ini yang akan muncul di frame vidio streaming)<br>
 ### Contoh
 
 
@@ -27,7 +27,7 @@ Masukkan Data foto ke dalam folder ids dan buat sub folder dengan nama custom (n
 │   │   ├── Nurdin1.png
 ```
 ## Cara Menjalankan:
-* masukan command 'sh run.sh ids' di folder utama
+* masukan command `sh run.sh ids` di folder utama
 
 ## Struktur Folder
 
@@ -50,4 +50,4 @@ Masukkan Data foto ke dalam folder ids dan buat sub folder dengan nama custom (n
 ├── run.sh
 ```
 
-![alt text](https://github.com/habrman/FaceRecognition/blob/master/example.png)
+![alt text](https://github.com/habrman/FaceRecognition/blob/master/example.pg)
