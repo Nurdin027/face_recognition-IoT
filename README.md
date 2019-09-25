@@ -1,51 +1,38 @@
-# FR-IoT
-IoT dengan Face Recognition 
+# FaceRecognition
+Webcam face recognition using tensorflow and opencv.
+The application tries to find faces in the webcam image and match them against images in an id folder using deep neural networks.
 
-## Library
+## Dependencies
 *   OpenCv
 *   Scipy
 *   Tensorflow
 *   Scikit-learn
-*   Numpy
-*   Six
 
-## Persiapan
-  * Download dataset dari facenet berikut:
-  * Get the [20170512-110547](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk) dan simpan di foldern utama (FR_IoT).<br>
-  * Biarkan nama folder dan sub folder nya (20170512-110547)<br>
-  * Masukkan Data foto ke dalam folder ids dan buat sub folder dengan nama custom (nama custom ini yang akan muncul di frame vidio streaming)<br>
-### Contoh
+## Inspiration
+Models, training code and inspriation can be found in the [facenet](https://github.com/davidsandberg/facenet) repository.
+[Multi-task Cascaded Convolutional Networks](https://kpzhang93.github.io/MTCNN_face_detection_alignment/index.html) are used for facial and landmark detection while an [Inception Resnet](https://arxiv.org/abs/1602.07261) is used for ID classification.
+A direct link to the pretrained Inception Resnet model can be found [here](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk).
 
+## How to
+Get the [model from facenet](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk) and setup your id folder.
+The id folder should contain subfolders, each containing at least one image of one person. The subfolders should be named after the person in the folder since this name is used as output when a match is found.
+
+E.g. id folder named `ids` containing subfolders `Adam` and `Eve`, each containing images of the respective person.
 
 ```bash
 ├── ids
-│   ├── Amar
-│   │   ├── Amar0.png
-│   │   ├── Amar1.png
-│   ├── Nurdin
-│   │   ├── Nurdin0.png
-│   │   ├── Nurdin1.png
+│   ├── Adam
+│   │   ├── Adam0.png
+│   │   ├── Adam1.png
+│   ├── Eve
+│   │   ├── Eve0.png
 ```
-## Cara Menjalankan:
-* masukan command `sh run.sh ids` di folder utama
+Download and unpack the [model](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk) to a folder and run `python3 main.py ./folder/model.pb ./ids/` to start the program. Make sure to replace `./folder/model.pb` with the path to the downloaded model.
 
-## Struktur Folder
+Visualization hotkeys:
+*   l - toggle facial landmarks
+*   b - toggle bounding box
+*   i - toggle id
+*   f - toggle frames per second
 
-```bash
-├── 20170512-110547
-├── ids
-│   ├── Amar
-│   │   ├── Amar0.png
-│   │   ├── Amar1.png
-│   ├── Nurdin
-│   │   ├── Nurdin0.png
-│   │   ├── Nurdin1.png
-├── det1.npy
-├── det2.npy
-├── det3.npy
-├── detect_and_align.py
-├── main.py
-├── README.md
-├── requirements.txt
-├── run.sh
-```
+![alt text](https://github.com/habrman/FaceRecognition/blob/master/example.png)
