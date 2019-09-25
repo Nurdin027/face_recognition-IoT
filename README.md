@@ -49,5 +49,3 @@ IoT dengan Face Recognition
 ├── requirements.txt
 ├── run.sh
 ```
-
-![alt text](https://github.com/habrman/FaceRecognition/blob/master/example.pg)
