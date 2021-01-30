@@ -10,7 +10,7 @@ IoT dengan Face Recognition
 *   Six
 
 ## Persiapan
-  * Download dataset facenet <a href="https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk" target="_blank">20170512-110547</a> dan simpan di foldern utama (face_recognition).<br>
+  * Download dataset facenet [20170512-110547](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk){:target="_blank" rel="noopener"} dan simpan di foldern utama (face_recognition).<br>
   * Biarkan nama folder dan sub folder nya (20170512-110547)<br>
   * Masukkan Data foto ke dalam folder ids dan buat sub folder dengan nama custom (nama custom ini yang akan muncul di frame vidio streaming)<br>
 ### Contoh
